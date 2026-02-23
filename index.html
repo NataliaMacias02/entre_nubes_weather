@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre nubes</title>
+    <title>Entre Nubes Weather</title>
+    <link rel="icon" href="./src/weather.png">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Entre Nubes Weather</h1>
+
+        <div>
+            <button class="btn-units">
+                <img src="./src/setting.png" alt="settings icon" width="12">
+                <span>Units</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Secciòn de busqueda -->
+        <section>
+            <h2>How's the sky looking today?</h2>
+
+            <form>
+                <input type="search" name="search-place" placeholder="Search for a place...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!--Clima actual -->
+        <section>
+            <article>
+                <h2>Current Weather</h2>
+                <p>Shizuoka, Japan</p>
+                <p>Saturday, April 22, 2026</p>
+                <img src="./src/sun.png" alt="sunny">
+                <p>28°</p>
+            </article>
+
+            <!--Detalles del clima actual -->
+            <section>
+                <article>
+                    <p>Feels like</p>
+                    <p>26°</p>
+                </article>
+                <article>
+                    <p>Humidity</p>
+                    <p>46%</p>
+                </article>
+                <article>
+                    <p>Wind</p>
+                    <p>14 km/h</p>
+                </article>
+                <article>
+                    <p>Precipitation</p>
+                    <p>0 mm</p>
+                </article>
+            </section>
+        </section>
+
+        <!-- Pronostico diario-->
+        <section>
+            <h2>Daily forecast</h2>
+
+            <article>
+                <p>Sun</p>
+                <img src="./src/sun.png" alt="sunny">
+                <p>28°</p>
+                <p>20°</p>
+            </article>
+            <article>
+                <p>Mon</p>
+                <img src="./src/clear-sky.png" alt="clear-sky">
+                <p>30°</p>
+                <p>26°</p>
+            </article>
+            <article>
+                <p>Tue</p>
+                <img src="./src/sun.png" alt="sunny">
+                <p>25°</p>
+                <p>20°</p>
+            </article>
+            <article>
+                <p>Wed</p>
+                <img src="./src/wind.png" alt="windy">
+                <p>35°</p>
+                <p>32°</p>
+            </article>
+            <article>
+                <p>Thu</p>
+                <img src="./src/wind.png" alt="windy">
+                <p>29°</p>
+                <p>23°</p>
+            </article>
+            <article>
+                <p>Fri</p>
+                <img src="./src/cloudy.png" alt="cloudy">
+                <p>25°</p>
+                <p>13°</p>
+            </article>
+            <article>
+                <p>Sat</p>
+                <img src="./src/rainy-day.png" alt="rainy">
+                <p>24°</p>
+                <p>15°</p>
+            </article>
+        </section>
+
+        <!-- Pronostico por hora-->
+        <section>
+            <h2>Hourly forecast</h2>
+
+            <label for="day">Choose a day:</label>
+            <select name="day" id="day">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+
+            <article>
+                <img src="./src/sun.png" alt="Sunny icon">
+                <p>3 PM — 30°</p>
+            </article>
+
+            <article>
+                <img src="./src/clear-sky.png" alt="Clear sky icon">
+                <p>4 PM — 28°</p>
+            </article>
+
+            <article>
+                <img src="./src/wind.png" alt="Wind icon">
+                <p>5 PM — 26°</p>
+            </article>
+
+            <article>
+                <img src="./src/wind.png" alt="Wind icon">
+                <p>6 PM — 24°</p>
+            </article>
+
+            <article>
+                <img src="./src/wind.png" alt="Wind icon">
+                <p>7 PM — 22°</p>
+            </article>
+
+            <article>
+                <img src="./src/rainy-day.png" alt="Rain icon">
+                <p>8 PM — 20°</p>
+            </article>
+
+            <article>
+                <img src="./src/rainy-day.png" alt="Rain icon">
+                <p>9 PM — 18°</p>
+            </article>
+
+            <article>
+                <img src="./src/rainy-day.png" alt="Rain icon">
+                <p>10 PM — 16°</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de pagina-->
+    <footer>
+        <p>&copy; 2026 Entre Nubes Weather</p>
+        <a href="https://facebook.com" target="_blank">
+            <img src="./src/facebook.png" alt="Follow us on Facebook">
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+            <img src="./src/instagram.png" alt="Follow us on Instagram">
+        </a>
 </body>
+
 </html>
