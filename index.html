@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre Nubes Weather</title>
     <link rel="icon" href="./src/weather.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Entre Nubes Weather</h1>
 
-        <div>
+        <div class="box-start">
+                <span id="logo"><img src="" alt=""></span>
+                <h1>Entre Nubes Weather</h1>
+        </div>
+
+        <div class="box-end">
             <button class="btn-units">
                 <img src="./src/setting.png" alt="settings icon" width="12">
                 <span>Units</span>
@@ -22,18 +34,18 @@
 
     <main>
         <!-- Secciòn de busqueda -->
-        <section>
+        <div class="search">
             <h2>How's the sky looking today?</h2>
 
-            <form>
+            <form  class="form">
                 <input type="search" name="search-place" placeholder="Search for a place...">
                 <button type="submit">Search</button>
             </form>
-        </section>
+        </div>
 
         <!--Clima actual -->
-        <section>
-            <article>
+        <div class="container-clima-actual">
+            <article class="clima-ciudad">
                 <h2>Current Weather</h2>
                 <p>Shizuoka, Japan</p>
                 <p>Saturday, April 22, 2026</p>
@@ -42,76 +54,86 @@
             </article>
 
             <!--Detalles del clima actual -->
-            <section>
-                <article>
+            <div class="detalles-clima">
+                <article class="card-detail">
                     <p>Feels like</p>
-                    <p>26°</p>
+                    <p class="text">26°</p>
                 </article>
-                <article>
+
+                <article class="card-detail">
                     <p>Humidity</p>
-                    <p>46%</p>
+                    <p class="text">46%</p>
                 </article>
-                <article>
+
+                <article class="card-detail">
                     <p>Wind</p>
-                    <p>14 km/h</p>
+                    <p class="text">14 km/h</p>
                 </article>
-                <article>
+
+                <article class="card-detail">
                     <p>Precipitation</p>
-                    <p>0 mm</p>
+                    <p class="text">0 mm</p>
                 </article>
-            </section>
-        </section>
+            </div>
+        </div>
 
         <!-- Pronostico diario-->
-        <section>
+        <div class="container-pronostico">
             <h2>Daily forecast</h2>
 
-            <article>
+            <article class="daily-item">
                 <p>Sun</p>
                 <img src="./src/sun.png" alt="sunny">
                 <p>28°</p>
                 <p>20°</p>
             </article>
-            <article>
+
+            <article class="daily-item">
                 <p>Mon</p>
                 <img src="./src/clear-sky.png" alt="clear-sky">
                 <p>30°</p>
                 <p>26°</p>
             </article>
-            <article>
+
+            <article class="daily-item">
                 <p>Tue</p>
                 <img src="./src/sun.png" alt="sunny">
                 <p>25°</p>
                 <p>20°</p>
             </article>
-            <article>
+
+            <article class="daily-item">
                 <p>Wed</p>
                 <img src="./src/wind.png" alt="windy">
                 <p>35°</p>
                 <p>32°</p>
             </article>
-            <article>
+
+            <article class="daily-item">
                 <p>Thu</p>
                 <img src="./src/wind.png" alt="windy">
                 <p>29°</p>
                 <p>23°</p>
             </article>
-            <article>
+
+            <article class="daily-item">
                 <p>Fri</p>
                 <img src="./src/cloudy.png" alt="cloudy">
                 <p>25°</p>
                 <p>13°</p>
             </article>
-            <article>
+
+            <article class="daily-item">
                 <p>Sat</p>
                 <img src="./src/rainy-day.png" alt="rainy">
                 <p>24°</p>
                 <p>15°</p>
             </article>
-        </section>
+        </div>
 
         <!-- Pronostico por hora-->
-        <section>
+        
+        <div class="pronostico-hora">
             <h2>Hourly forecast</h2>
 
             <label for="day">Choose a day:</label>
@@ -125,56 +147,56 @@
                 <option value="sunday">Sunday</option>
             </select>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/sun.png" alt="Sunny icon">
                 <p>3 PM — 30°</p>
             </article>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/clear-sky.png" alt="Clear sky icon">
                 <p>4 PM — 28°</p>
             </article>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/wind.png" alt="Wind icon">
                 <p>5 PM — 26°</p>
             </article>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/wind.png" alt="Wind icon">
                 <p>6 PM — 24°</p>
             </article>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/wind.png" alt="Wind icon">
                 <p>7 PM — 22°</p>
             </article>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/rainy-day.png" alt="Rain icon">
                 <p>8 PM — 20°</p>
             </article>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/rainy-day.png" alt="Rain icon">
                 <p>9 PM — 18°</p>
             </article>
 
-            <article>
+            <article class="hour-item">
                 <img src="./src/rainy-day.png" alt="Rain icon">
                 <p>10 PM — 16°</p>
             </article>
-        </section>
+        </div>
     </main>
 
     <!-- Pie de pagina-->
-    <footer>
+    <footer class="cookie-footer">
         <p>&copy; 2026 Entre Nubes Weather</p>
-        <a href="https://facebook.com" target="_blank">
+        <a href="https://www.facebook.com/share/1EdXKP2bb9/" target="_blank">
             <img src="./src/facebook.png" alt="Follow us on Facebook">
         </a>
 
-        <a href="https://instagram.com" target="_blank">
+        <a href="https://www.instagram.com/fggnatt_?igsh=MTdpb2pxbnZjanl4dQ==" target="_blank">
             <img src="./src/instagram.png" alt="Follow us on Instagram">
         </a>
 </body>
